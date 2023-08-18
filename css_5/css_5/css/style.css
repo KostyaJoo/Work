@@ -1,0 +1,144 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;   
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjus: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body {
+    padding: 30px;
+}
+
+.block {
+    margin-bottom: 30px;
+}
+
+.block p:nth-child(odd) {
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+.block p:nth-child(even) {
+    background-color: #eee;
+}
+
+.block p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.link {
+    color: red;
+}
+
+.link:visited{ /* Псевдо класс visited рабоатет для ссылок на которые мы уже зашли */
+    color: silver;
+}
+
+.link:hover{  /* Псевдо класс Hover делает так, ччто при наведении мыши будет меняться объект */
+    color: aqua;
+    text-decoration: underline;
+}
+
+.link:active{ /* Этот псевдокласс active, работает при нажатии на объект */
+    color: green
+}
+
+
+.textinput {
+    border: 1px solid #666;
+    height: 50px;
+    padding: 0px 15px ;
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.textinput:focus { /* Это псевдокласс работает при фокусировке на эллементе допустим на поле */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.textbutton {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #666;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.textbutton:hover {
+    background-color: #333;
+    color: yellow;
+}
+
+.textbutton:active {
+    background-color: #eee;
+}
+
+.list {
+}
+
+.list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.list li:first-child{ /* Этот псевдокласс обращается к первому элементу в блоке */
+    color: green;
+}
+
+.list li:last-child{ /* Тут последний эжлемент, но он не сработает если допустим к конце html этого тега указать какой то div потому чт li уже не будет являться последним эллементом так жее и с первым  */
+    color: blue;
+}
+
+
+.list li:nth-child(4){ /* Таким образом псевдокласса, я указываю что хочу измнить 4 эллемент в блоке, так же мы можем вместо 4 указать допустим odd это обращение ко всем не четным эллементам, еще even этот параеметр обращается ко всем четным*/
+    text-decoration: purple;
+}
+
+.list li:nth-child(4):hover{
+    
+    width: 60px;
+    height: 20px;
+    background-color: greenyellow;
+    text-transform: uppercase;
+
+}

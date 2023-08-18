@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с HTML тегами. Часть №3(Формы)</title>
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <p>Name</p>
+        <input placeholder="Name" tabindex="1" name="username" type="text">
+        </div>
+        <div>
+            <p>Password</p>
+        <input placeholder="Pass" tabindex="2" name="userpass" type="password">
+        </div>
+        <div>
+            <p>Number</p>
+        <input placeholder="Number" tabindex="3" name="usernum" type="tel">
+        </div>
+        <div>
+            <p>Gender</p>
+       <div>
+            <input checked type="radio" tabindex="4" name="usersex" value="male"> Male
+            <br>
+            <input type="radio" tabindex="4" name="usersex" value="female"> Female
+       </div>
+        </div>
+        <div>
+            <p>Property</p>
+            <div>
+                <input checked type="checkbox" name="bike" tabindex="5" value="yes">Bicycle
+            </div>
+            <div>
+                <input type="checkbox" name="car" tabindex="6" value="yes">Machine
+            </div>
+            <div>
+                <input disabled type="checkbox" name="house" tabindex="7" value="yes">Home
+            </div>
+        </div>
+        <div>
+            <p>Additional Information</p>
+        <div>
+            <textarea name="text" tabindex="8"></textarea>
+        </div>
+        </div>
+        <div>
+            <p>Attach a photo</p>
+            <input type="file" name="userfoto" tabindex="9">
+        </div>
+        <div>
+            <p>Favorite color</p>
+            <select tabindex="10" name="color">
+                <option selected value="none"></option>
+                <option value="black">Black</option>
+                <option value="white">Whte</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <p>Action</p>
+            <div>
+                <button tabindex="11" type="submit">Send</button>
+                <button tabindex="12" type="reset">Clear</button>
+                <!--  Значение submit, при нажатии на кнопку вся форма будет отправлена, а так же еще есть значение reset, при нажатии с таким атрибутом на кнопку, вся форма очистится.  -->
+            </div>
+        </div>
+    </form>
+</body> 
+</html>

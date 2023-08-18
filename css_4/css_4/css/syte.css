@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;   
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjus: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body {
+    font-family: 'Times New Roman',Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background: url(../img/css_template.xcf);
+    background-color: rgb(232, 232, 232);
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.image {
+
+    background: url(../img/anime-girl-watching-the-sunset-3d-illustration_717906-1415.avif) 100% 100%/ cover no-repeat;
+
+    background-color: white;
+
+    height: 500px;
+    border: 2px solid white;
+    box-shadow: 0 0 11px red;
+    margin: 20px;
+}
+.donecs {
+
+    width: 700px;
+    opacity: 0.5;
+    font-size: 20px;
+
+    margin: 0 0 20px 24px;
+
+}
+.aenean {
+    width: 650px;
+    opacity: 0.5;
+    font-size: 20px;
+
+    margin: 0 0 60px 24px;
+}
+.list li{
+    font-size: 16px;
+    margin: 0 0 12px 34px ;
+    background: url(../img/Check_mark.svg.png)  left/ 22px 22px no-repeat;
+    padding-left: 25px ;
+
+}
+
+#Put {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#A {
+    color: brown;
+    font-style: italic;
+}
+
+#Tell {
+    font-weight: 700;
+}
+
+#Associate {
+    color: silver;
+    text-decoration: line-through;
+}
+
+.full {
+    margin-top: 30px;
+
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: red;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}

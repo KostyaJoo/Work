@@ -1,0 +1,62 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;   
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjus: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+.example-block {
+    box-shadow: 5px/* По горизонтали */ 5px /* По вертикали */ 10px /* Радиус тени */ 5px /* Расстояние, все это для тени блока, добавив параметр inset тень уйдет внутрь блока */ #000;
+    /* overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  СОздает круг*/
+    padding: 10px;
+    /* opacity: 0.8px; прозрачность эллемента, при прозрачности текст остается юзабельным и место там где был блок не пропадает а так же есть свойство visibility тут уже текст не юзабелен, но место от блока остается */
+    border-radius: 20px;
+    border: 10px dashed #000;
+    border-bottom: 0;
+    font-size: 50px;
+    margin: 0 0 30px 0;
+}
+.example-string {
+    font-size: 50px;
+    outline: 5px solid #000;
+    /* Аутлайн это внешняя линия, в отличии от бордера.  */
+}
+.exaple-image {
+}

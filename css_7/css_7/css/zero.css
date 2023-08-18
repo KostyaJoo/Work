@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;   
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjus: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body {
+    padding: 20px;
+}
+
+.block {
+    border: 5px solid red;
+    max-width: 800px;
+    height: 1500px;
+    margin: 0px auto; 
+    /* С такими значениями свойства margin при ограниченном блочном элементе как  допустим тут max-width: 800px;  max-height: 800px; блок встанет по центру */
+
+    position: relative;
+}
+.block div {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.block_1 {
+    background-color: #ece89d;
+    position: absolute;
+    /* Для того что бы position: absolute; Корректно работало, и позиционировалось относительно родитлельского объекта, нужно в родительском объекте указать position: relative; */
+    width: 90%;
+    z-index: 4;
+    left: 40px;
+    bottom: 20px;
+
+}
+
+.block_2 {
+    background-color: #700a4e;
+    position: relative;
+    
+    top: 80px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+
+}
+.block_3 {
+    position: relative;
+    z-index: 2;
+    /* таким образом мы указываем что блок 3 главнее чем блок 2, так как зет индекс у блока 3 два, а у блока 2, зет индекс 0, поэтому блок 3 перекрывает его на экране */
+    background-color: #0a7725;
+}
+
+.block_4 {
+
+    position: fixed;
+    /* Позиционируется по отношению к окну браузера, а так же фиксирует его, при скроле страницы этот блок будет оставаться на месте */
+    z-index: 3;
+    color: wheat;
+
+    background-color: #0a138a;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.block_5 {
+
+    z-index: 1;
+    position: sticky;
+    /* Такое позиционирывание является неким гибридом между static и fixed, он работает когда при скроле доходит до него верхняя страница браузера, как бы прилепая к верхней части веб сайта */
+    top: 0;
+
+    background-color: #d10b8f;
+}
+

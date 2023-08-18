@@ -1,0 +1,35 @@
+form {
+    width: 300px;
+    margin-left: 200px;
+    background-color: azure;
+    border-radius: 30px;
+}
+
+select {
+    flex: auto;
+    left: 200px;
+}
+
+#date {
+    width: 30px;
+}
+
+#sl {
+    color:;
+}
+
+#twodate {
+    width: 30px;
+}
+
+#cvc {
+    width: 35px;
+}
+#clean {
+    margin: 0px 10px 0px 10px;
+}
+
+fieldset {
+    border-radius: 20px;
+    color: black;
+}

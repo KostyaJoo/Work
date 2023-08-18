@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;   
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjus: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body {
+    
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.list {
+    padding: 0 0 0 250px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.list li {
+    
+}
+
+
+.list li:nth-child(1){
+    text-decoration: line-through red;
+}
+
+.list li:nth-child(1):hover{
+    opacity: 0.5;
+}
+
+.list li:nth-child(2){
+   font-weight: 600;
+   font-family: serif;
+}
+
+.list li:nth-child(3){
+    font-style: italic;
+ }
+
+ .list li:nth-child(4){
+    text-transform: uppercase;
+ }
+
+ .list li::before{
+    content:' ';
+
+    display: inline-block;
+
+
+    width: 15px;
+    height: 15px;
+
+
+    background: url(../img/5290076.png) no-repeat;
+    background-size: 20px 20px;
+ }
+
+.glist {
+    padding: 0 0 0 250px;
+    line-height: 20px;
+}
+
+.glist li::before{
+    content:' ';
+
+    display: inline-block;
+
+
+    width: 15px;
+    height: 15px;
+
+
+    background: url(../img/5290076.png) no-repeat;
+    background-size: 20px 20px;
+ }
+
+ .glist li:hover {
+
+    color: red;
+
+ }
+
+ #Nig {
+    margin: 50px 0 100px 250px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(24, 145, 145);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 0 0 20px aquamarine;
+}
+
+#Nig:hover {
+    background-color: rgb(15, 78, 78);
+    box-shadow: none;
+}
+
+#Nig:active {
+    background-color: rgb(95, 114, 114);
+}
+
+#Nig::after {
+    content: ' -->' ;
+}
+
+.lor {
+    margin-left: 250px;
+    max-width: 700px;
+}
+
+.lor::first-line {
+color: red;
+}
+
+.lorem {
+    margin-left: 250px;
+    max-width: 700px;
+
+}
+
+.lorem::first-letter {
+    color: red;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: serif;
+}
